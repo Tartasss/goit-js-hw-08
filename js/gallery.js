@@ -64,4 +64,6 @@ const images = [
     },
   ];
   
-  
+ const list = document.querrySelector(".gallery");
+ list.insertAjustmentHTML("afterbegin", createGallery(images));
+list.addEventListener("click", handlerImg);
