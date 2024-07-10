@@ -77,12 +77,12 @@ function createGallery(arr) {
 }
 
 function handlerImg(evt) {
-  eveent.preventDefault();
-  if (eveent.currentTarget === eveent.target) {
+  evt.preventDefault();
+  if (evt.currentTarget === evt.target) {
     return;
   }
 
-  const img = eveent.target.closest(".gallery-image");
+  const img = evt.target.closest(".gallery-image");
   const currentDataset = img.dataset.source;
   const instance = basicLightbox.create(`
     <div>
